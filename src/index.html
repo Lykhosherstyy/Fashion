@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fashion Press</title> 
+    <link href="css/main.css" rel="stylesheet" media="all">
+    <link href="assets/flexslider.css"  rel="stylesheet" type="text/css">
+    <link href="assets/font-awesome.min.css" rel="stylesheet" media="all">
+    <script src="assets/jquery-1.5.2.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="assets/jquery.flexslider.js"></script>
+    <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+        $(window).load(function() {
+          $('.flexslider').flexslider({slideshow:false,controlNav: false});
+        });
+    </script>
+  </head>
+
+<body>
+    <div class="wrapper">
+    //= templates/header.html
+    <div class="main">
+    //= templates/slider.html
+    //= templates/search-panel.html
+    //= templates/content.html
+    </div>
+    //= templates/footer.html
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+/*-----Search panel----------------------------------------*/
+.search__panel{
+	padding: 10px 0;
+	background-color: #deeaef;
+	@include clr();
+	background-image: -webkit-linear-gradient(left, #deeaf1, #e8eced,#f9efe9,#f9e8e4);
+    background-image:    -moz-linear-gradient(left, #deeaf1, #e8eced,#f9efe9,#f9e8e4);
+    background-image:     -ms-linear-gradient(left, #deeaf1, #e8eced,#f9efe9,#f9e8e4);
+    background-image:      -o-linear-gradient(left, #deeaf1, #e8eced,#f9efe9,#f9e8e4);
+	background-image: linear-gradient(to right, #deeaf1, #e8eced,#f9efe9,#f9e8e4);
+	.search{
+		float: left;
+	}
+}
+.form_search{
+	position: relative;
+	label{
+		font-size: 14px;
+		color: #df1f26;
+		text-transform: uppercase;
+		@include font(RobotoMedium,normal,bold);
+	}
+	input[type="text"]{
+		width: 280px;
+		height: 30px;
+		margin-left: 10px;
+		padding: 0 35px 0 5px;
+		background-color:#c9c9c9;
+		color: #000;
+		outline: none;
+		border: none; 
+	}
+	input[type="submit"]{
+		position: absolute;
+	    top: 0;
+	    right: 0;
+	    width: 30px;
+	    height: 30px;
+	    cursor: pointer;
+	}
+}
+.search__panel_list{
+	float: right;
+	a{
+		margin-left: 15px;
+		font-size: 30px;
+		color: #df1f26;
+	}
+}

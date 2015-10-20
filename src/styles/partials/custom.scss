@@ -1,0 +1,45 @@
+$gutter:10px;
+$columns:12;
+.wrapper{
+	min-width: 320px;
+	overflow: hidden;
+}
+.container{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+.btn {
+	display: inline-block;
+	color: #fff;
+    background-color: #df1f26;
+    outline: none;
+    border:none;
+}
+.row{
+	margin-left: $gutter/-2;
+	margin-right: $gutter/-2;
+}
+@for $i from 1 through $columns{
+	.col-#{$i}{
+		float: left;
+		width:percentage((1/$columns)*$i);
+	}
+}
+.col{
+	position: relative;
+    min-height: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.animation{
+	-webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}

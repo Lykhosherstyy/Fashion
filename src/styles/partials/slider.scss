@@ -1,0 +1,33 @@
+/*-----Slider----------------------------------------*/
+.flexslider{
+	@include background-size(cover);
+}
+.flex-direction-nav a {
+	@include border-radius(50%);
+	line-height: 50px;
+	text-align: center;
+	background-color: rgba(73,85,101,0.2);
+}
+.slide{
+	max-width: 1080px;
+	width: 100%;
+	margin: 0 auto;
+	@include clr();
+	.slide__img{
+		position: relative;
+		float: right;
+	}
+	.slide__text{
+		padding-top: 120px;
+		color: #fff;
+		@include font(OpenSansLight,normal,normal);
+		p{
+			font-size: 52px;
+			margin-bottom: 30px;
+		}
+		span{
+			font-size: 17px;
+			line-height: 25px;
+		}
+	}
+}
